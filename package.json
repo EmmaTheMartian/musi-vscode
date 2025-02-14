@@ -22,9 +22,14 @@
       "scopeName": "source.musi",
       "path": "./syntaxes/musi.tmLanguage.json"
     }],
-    "snippets": [{
-      "language": "musi",
-      "path": "./snippets/snippets.json"
-    }]
+    "snippets": [
+      {
+        "language": "musi",
+        "path": "./snippets/syntax.json"
+      },{
+        "language": "musi",
+        "path": "./snippets/stdlib.lists.json"
+      }
+    ]
   }
 }
