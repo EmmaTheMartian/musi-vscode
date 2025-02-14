@@ -1,0 +1,59 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "musi",
+	"patterns": [
+		{ "include": "#keywords" },
+		{ "include": "#strings" },
+		{ "include": "#booleans" },
+		{ "include": "#numbers" }
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.musi",
+					"match": "\\b(if|elseif|else|while|return)\\b"
+				},
+				{
+					"name": "keyword.other.musi",
+					"match": "\\b(let|do|end|fn)\\b"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.double.musi",
+					"begin": "\"",
+					"end": "\""
+				},
+				{
+					"name": "string.quoted.single.musi",
+					"begin": "'",
+					"end": "'"
+				},
+				{
+					"name": "constant.character.escape.musi",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric",
+					"match": "-?\\d+(.\\d+)?"
+				}
+			]
+		},
+		"booleans": {
+			"patterns": [
+				{
+					"name": "constant.other",
+					"match": "\\b(true|false|null)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.musi"
+}

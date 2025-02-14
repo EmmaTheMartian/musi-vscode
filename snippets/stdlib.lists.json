@@ -1,0 +1,50 @@
+{
+	"lists.each": {
+		"prefix": "each",
+		"body": [
+			"lists.each(${1:array}, fn it do",
+			"$2",
+			"end)"
+		]
+	},
+	"lists.tryeach": {
+		"prefix": "tryieach",
+		"body": [
+			"lists.tryieach(${1:array}, fn it do",
+			"$2",
+			"end)"
+		]
+	},
+	"lists.ieach": {
+		"prefix": "ieach",
+		"body": [
+			"lists.ieach(${1:array}, fn it do",
+			"$2",
+			"end)"
+		]
+	},
+	"lists.tryieach": {
+		"prefix": "tryeach",
+		"body": [
+			"lists.tryeach(${1:array}, fn it do",
+			"$2",
+			"end)"
+		]
+	},
+	"lists.filter": {
+		"prefix": ".filter",
+		"body": [
+			"lists.filter(${1:array}, fn it do",
+			"$2",
+			"end)"
+		]
+	},
+	"lists.map": {
+		"prefix": ".map",
+		"body": [
+			"lists.map(${1:array}, fn it do",
+			"$2",
+			"end)"
+		]
+	}
+}

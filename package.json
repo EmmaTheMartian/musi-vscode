@@ -1,0 +1,30 @@
+{
+  "name": "musi-vscode",
+  "displayName": "musi-vscode",
+  "description": "language support for musi",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "musi",
+      "aliases": ["musi", "musi"],
+      "extensions": [".musi"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "musi",
+      "scopeName": "source.musi",
+      "path": "./syntaxes/musi.tmLanguage.json"
+    }],
+    "snippets": [{
+      "language": "musi",
+      "path": "./snippets/snippets.json"
+    }]
+  }
+}
