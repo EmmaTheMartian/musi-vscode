@@ -2,6 +2,10 @@
   "name": "musi-vscode",
   "displayName": "musi-vscode",
   "description": "language support for musi",
+  "repository": {
+    "url": "https://github.com/emmathemartian/musi-vscode"
+  },
+  "license": "MIT",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.97.0"
